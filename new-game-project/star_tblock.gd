@@ -16,7 +16,6 @@ func _process(delta: float) -> void:
 func pressed()->void:
 	mousepressed = true
 func unpressed()->void:
-	
 	if area.has_overlapping_areas():
 		var otherareas = area.get_overlapping_areas()
 		
@@ -63,6 +62,7 @@ func unpressed()->void:
 			steigen += 1
 			i.position = startpos
 			i.position.y += 78 * steigen
+
 
 	
 	else:

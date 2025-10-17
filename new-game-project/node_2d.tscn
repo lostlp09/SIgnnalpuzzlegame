@@ -16,10 +16,10 @@ size = Vector2(20, 246)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kdubu"]
 
 [node name="Node2D" type="Node2D"]
-metadata/_edit_vertical_guides_ = [128.0, -832.0]
+metadata/_edit_vertical_guides_ = [128.0, -832.0, -389.0]
 
 [node name="Move" type="Sprite2D" parent="." groups=["move"]]
-position = Vector2(-197, 14)
+position = Vector2(-27, 14)
 scale = Vector2(2.305, 2.305)
 texture = ExtResource("1_0hol4")
 script = ExtResource("3_kdubu")
@@ -42,6 +42,88 @@ position = Vector2(0, 133)
 shape = SubResource("RectangleShape2D_q6r6c")
 
 [node name="TextEdit" type="TextEdit" parent="Move"]
+anchors_preset = -1
+anchor_top = 0.1875
+anchor_bottom = 0.1875
+offset_left = -7.43322
+offset_top = -9.21254
+offset_right = 103.777
+offset_bottom = 47.7875
+scale = Vector2(0.232997, 0.173329)
+theme_override_colors/background_color = Color(1, 1, 1, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_q6r6c")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kdubu")
+text = "100"
+scroll_v_scroll_speed = 9.435
+metadata/_edit_use_anchors_ = true
+
+[node name="Move2" type="Sprite2D" parent="." groups=["move"]]
+position = Vector2(174, 14)
+scale = Vector2(2.305, 2.305)
+texture = ExtResource("1_0hol4")
+script = ExtResource("3_kdubu")
+metadata/oldpos = Vector2(0, 0)
+
+[node name="Button" type="Button" parent="Move2"]
+offset_left = -32.0
+offset_top = -17.0
+offset_right = 32.0
+offset_bottom = 21.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="Move2"]
+position = Vector2(-0.464576, -32.5203)
+scale = Vector2(4.104, 0.238)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Move2/Area2D"]
+position = Vector2(0, 133)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="TextEdit" type="TextEdit" parent="Move2"]
+anchors_preset = -1
+anchor_top = 0.1875
+anchor_bottom = 0.1875
+offset_left = -7.43322
+offset_top = -9.21254
+offset_right = 103.777
+offset_bottom = 47.7875
+scale = Vector2(0.232997, 0.173329)
+theme_override_colors/background_color = Color(1, 1, 1, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_q6r6c")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kdubu")
+text = "100"
+scroll_v_scroll_speed = 9.435
+metadata/_edit_use_anchors_ = true
+
+[node name="Move3" type="Sprite2D" parent="." groups=["move"]]
+position = Vector2(416, 12)
+scale = Vector2(2.305, 2.305)
+texture = ExtResource("1_0hol4")
+script = ExtResource("3_kdubu")
+metadata/oldpos = Vector2(0, 0)
+
+[node name="Button" type="Button" parent="Move3"]
+offset_left = -32.0
+offset_top = -17.0
+offset_right = 32.0
+offset_bottom = 21.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="Move3"]
+position = Vector2(-0.464576, -32.5203)
+scale = Vector2(4.104, 0.238)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Move3/Area2D"]
+position = Vector2(0, 133)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="TextEdit" type="TextEdit" parent="Move3"]
 anchors_preset = -1
 anchor_top = 0.1875
 anchor_bottom = 0.1875
@@ -104,6 +186,104 @@ scale = Vector2(4.104, 0.238)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Rotateblock/Area2D"]
 position = Vector2(0, 133)
 shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="TextEdit" type="TextEdit" parent="Rotateblock"]
+anchors_preset = -1
+anchor_top = 0.1875
+anchor_bottom = 0.1875
+offset_left = -7.43322
+offset_top = -9.21254
+offset_right = 103.777
+offset_bottom = 47.7875
+scale = Vector2(0.232997, 0.173329)
+theme_override_colors/background_color = Color(1, 1, 1, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_q6r6c")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kdubu")
+text = "100"
+scroll_v_scroll_speed = 9.435
+metadata/_edit_use_anchors_ = true
+
+[node name="Rotateblock2" type="Sprite2D" parent="." groups=["Rotate"]]
+position = Vector2(311, 362)
+scale = Vector2(2.305, 2.305)
+texture = ExtResource("4_d21ai")
+script = ExtResource("3_kdubu")
+metadata/oldpos = Vector2(0, 0)
+
+[node name="Button" type="Button" parent="Rotateblock2"]
+offset_left = -32.288
+offset_top = -19.7445
+offset_right = 31.712
+offset_bottom = 24.2555
+flat = true
+
+[node name="Area2D" type="Area2D" parent="Rotateblock2"]
+position = Vector2(-0.464576, -32.5203)
+scale = Vector2(4.104, 0.238)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rotateblock2/Area2D"]
+position = Vector2(0, 133)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="TextEdit" type="TextEdit" parent="Rotateblock2"]
+anchors_preset = -1
+anchor_top = 0.1875
+anchor_bottom = 0.1875
+offset_left = -7.43322
+offset_top = -9.21254
+offset_right = 103.777
+offset_bottom = 47.7875
+scale = Vector2(0.232997, 0.173329)
+theme_override_colors/background_color = Color(1, 1, 1, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_q6r6c")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kdubu")
+text = "100"
+scroll_v_scroll_speed = 9.435
+metadata/_edit_use_anchors_ = true
+
+[node name="Rotateblock3" type="Sprite2D" parent="." groups=["Rotate"]]
+position = Vector2(525, 344)
+scale = Vector2(2.305, 2.305)
+texture = ExtResource("4_d21ai")
+script = ExtResource("3_kdubu")
+metadata/oldpos = Vector2(0, 0)
+
+[node name="Button" type="Button" parent="Rotateblock3"]
+offset_left = -32.288
+offset_top = -19.7445
+offset_right = 31.712
+offset_bottom = 24.2555
+flat = true
+
+[node name="Area2D" type="Area2D" parent="Rotateblock3"]
+position = Vector2(-0.464576, -32.5203)
+scale = Vector2(4.104, 0.238)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rotateblock3/Area2D"]
+position = Vector2(0, 133)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="TextEdit" type="TextEdit" parent="Rotateblock3"]
+anchors_preset = -1
+anchor_top = 0.1875
+anchor_bottom = 0.1875
+offset_left = -7.43322
+offset_top = -9.21254
+offset_right = 103.777
+offset_bottom = 47.7875
+scale = Vector2(0.232997, 0.173329)
+theme_override_colors/background_color = Color(1, 1, 1, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_q6r6c")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kdubu")
+text = "100"
+scroll_v_scroll_speed = 9.435
+metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(577, 325)
