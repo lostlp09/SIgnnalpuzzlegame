@@ -1,41 +1,44 @@
-[gd_scene load_steps=19 format=3 uid="uid://dyqljflr220j3"]
+[gd_scene load_steps=22 format=3 uid="uid://dyqljflr220j3"]
 
 [ext_resource type="Texture2D" uid="uid://ce067qio0jifs" path="res://move.png" id="1_0hol4"]
 [ext_resource type="Texture2D" uid="uid://df6cksblualhb" path="res://STARTblock.png" id="2_q6r6c"]
 [ext_resource type="Script" uid="uid://dv1jyuvf0su4q" path="res://star_tblock.gd" id="3_kdubu"]
 [ext_resource type="FontFile" uid="uid://qm60bnc47k4o" path="res://PixelifySans-VariableFont_wght.ttf" id="3_q6r6c"]
 [ext_resource type="Texture2D" uid="uid://bvy3yswkegu0u" path="res://Rotateblock.png" id="4_d21ai"]
-[ext_resource type="Texture2D" uid="uid://cycqko5n8cw1d" path="res://Screenshot 2025-10-16 145056.png" id="6_kdubu"]
-[ext_resource type="Texture2D" uid="uid://cl5bvd1fpnn2q" path="res://icon.svg" id="7_rj586"]
+[ext_resource type="Texture2D" uid="uid://dafdc1wnl5ax8" path="res://images/floor.png" id="6_nr8wp"]
+[ext_resource type="Texture2D" uid="uid://btfl8q12nssx3" path="res://images/robot.png" id="7_nr8wp"]
 [ext_resource type="Texture2D" uid="uid://dlaq3f3hiu07f" path="res://images/godotwaka.png" id="8_4d7sh"]
 [ext_resource type="Script" uid="uid://cf0tnbl73s830" path="res://sprite_2d_2.gd" id="9_4d7sh"]
+[ext_resource type="Script" uid="uid://bms5p5hnxv6tj" path="res://testtt.gd" id="10_0h7mo"]
 [ext_resource type="Texture2D" uid="uid://gvmc0pt2fsy8" path="res://images/loopblocks/looptop.png" id="10_x0ka3"]
 [ext_resource type="Texture2D" uid="uid://2ryakjd0emf0" path="res://images/loopblocks/loopstange.png" id="11_0h7mo"]
 [ext_resource type="Texture2D" uid="uid://1tgu4dw1135h" path="res://images/loopblocks/loopbottom.png" id="12_nr8wp"]
+[ext_resource type="Texture2D" uid="uid://csg0ppv80hkdf" path="res://images/Escape.png" id="14_nr8wp"]
+[ext_resource type="Script" uid="uid://cvb8axtexh84r" path="res://shop.gd" id="15_d2bti"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
 size = Vector2(20, 199.163)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kdubu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqns4"]
 size = Vector2(16.1738, 158.588)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0ka3"]
-size = Vector2(163, 15)
+size = Vector2(163, 11)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0h7mo"]
-size = Vector2(163, 16.875)
+size = Vector2(148.75, 10.7187)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ir8iy"]
 size = Vector2(147, 77.5)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ta5nu"]
 
 [node name="Node2D" type="Node2D"]
 metadata/_edit_vertical_guides_ = [128.0, -832.0, -389.0]
 
 [node name="Move" type="Sprite2D" parent="." groups=["move"]]
 z_index = 20
-position = Vector2(164, -97)
+position = Vector2(-573, -6.99998)
 scale = Vector2(2.305, 2.305)
 texture = ExtResource("1_0hol4")
 script = ExtResource("3_kdubu")
@@ -58,26 +61,21 @@ position = Vector2(0, 141.197)
 scale = Vector2(0.795, 0.795)
 shape = SubResource("RectangleShape2D_q6r6c")
 
-[node name="TextEdit" type="TextEdit" parent="Move"]
-anchors_preset = -1
-anchor_top = 0.1875
-anchor_bottom = 0.1875
-offset_left = -7.43322
-offset_top = -9.21254
-offset_right = 103.777
-offset_bottom = 47.7875
-scale = Vector2(0.232997, 0.173329)
-theme_override_colors/background_color = Color(1, 1, 1, 0)
+[node name="LineEdit2" type="LineEdit" parent="Move"]
+offset_left = -8.67682
+offset_top = -7.37528
+offset_right = 48.4065
+offset_bottom = 20.6247
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_q6r6c")
-theme_override_font_sizes/font_size = 26
-theme_override_styles/normal = SubResource("StyleBoxEmpty_kdubu")
-text = "100"
-scroll_v_scroll_speed = 9.435
-metadata/_edit_use_anchors_ = true
+theme_override_font_sizes/font_size = 16
+text = "1"
+max_length = 2
+flat = true
 
 [node name="StarTblock" type="Sprite2D" parent="." groups=["Startblock"]]
-position = Vector2(-197, -64)
+position = Vector2(276, -128)
 scale = Vector2(2.305, 2.305)
 texture = ExtResource("2_q6r6c")
 script = ExtResource("3_kdubu")
@@ -101,7 +99,7 @@ shape = SubResource("RectangleShape2D_q6r6c")
 [node name="all children" type="Node" parent="StarTblock"]
 
 [node name="Rotateblock" type="Sprite2D" parent="." groups=["Rotate"]]
-position = Vector2(-155, 121)
+position = Vector2(-547, -211)
 scale = Vector2(2.305, 2.305)
 texture = ExtResource("4_d21ai")
 script = ExtResource("3_kdubu")
@@ -123,40 +121,36 @@ position = Vector2(0.0603456, 143.02)
 shape = SubResource("RectangleShape2D_hqns4")
 metadata/_edit_group_ = true
 
-[node name="TextEdit" type="TextEdit" parent="Rotateblock"]
-anchors_preset = -1
-anchor_top = 0.1875
-anchor_bottom = 0.1875
-offset_left = -7.43322
-offset_top = -9.21254
-offset_right = 103.777
-offset_bottom = 47.7875
-scale = Vector2(0.232997, 0.173329)
-theme_override_colors/background_color = Color(1, 1, 1, 0)
+[node name="LineEdit" type="LineEdit" parent="Rotateblock"]
+z_index = 320
+offset_left = -10.4122
+offset_top = -7.8091
+offset_right = 46.6712
+offset_bottom = 20.1909
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_q6r6c")
-theme_override_font_sizes/font_size = 26
-theme_override_styles/normal = SubResource("StyleBoxEmpty_kdubu")
-text = "100"
-scroll_v_scroll_speed = 9.435
-metadata/_edit_use_anchors_ = true
+theme_override_font_sizes/font_size = 16
+text = "1"
+max_length = 2
+flat = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(577, 325)
 scale = Vector2(4.305, 4.305)
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 691.0
-offset_top = -216.0
-offset_right = 1533.0
-offset_bottom = 643.0
-texture = ExtResource("6_kdubu")
+offset_left = 672.0
+offset_top = -212.0
+offset_right = 1537.0
+offset_bottom = 653.0
+texture = ExtResource("6_nr8wp")
 stretch_mode = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(738, 596)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("7_rj586")
+position = Vector2(720, 605)
+rotation = -3.14159
+scale = Vector2(-1.475, -1.475)
+texture = ExtResource("7_nr8wp")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(624, -147)
@@ -171,7 +165,7 @@ offset_right = 981.04
 offset_bottom = 697.0
 
 [node name="Loopall" type="Sprite2D" parent="." groups=["loop"]]
-position = Vector2(236, 149)
+position = Vector2(-615, -862)
 scale = Vector2(2.3, 2.3)
 script = ExtResource("3_kdubu")
 metadata/oldpos = Vector2(0, 0)
@@ -186,13 +180,14 @@ flat = true
 [node name="Area2D" type="Area2D" parent="Loopall" groups=["loop"]]
 position = Vector2(40.4348, -188.696)
 scale = Vector2(0.434783, 0.434783)
+script = ExtResource("10_0h7mo")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Loopall/Area2D"]
-position = Vector2(-91.5, 488.5)
+position = Vector2(-86, 487.5)
 shape = SubResource("RectangleShape2D_x0ka3")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Loopall/Area2D"]
-position = Vector2(-93, 364.563)
+position = Vector2(-98.9999, 357)
 shape = SubResource("RectangleShape2D_0h7mo")
 
 [node name="in" type="CollisionShape2D" parent="Loopall/Area2D"]
@@ -207,3 +202,53 @@ texture = ExtResource("11_0h7mo")
 
 [node name="bottom" type="Sprite2D" parent="Loopall/loopall"]
 texture = ExtResource("12_nr8wp")
+
+[node name="Escape" type="Sprite2D" parent="."]
+position = Vector2(1406, -168)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("14_nr8wp")
+
+[node name="Shop" type="Sprite2D" parent="."]
+position = Vector2(-223, 342)
+scale = Vector2(318.63, -1191.56)
+texture = SubResource("CanvasTexture_ta5nu")
+script = ExtResource("15_d2bti")
+
+[node name="Rotateblock2" type="Sprite2D" parent="Shop"]
+position = Vector2(-0.021969, 0.322268)
+scale = Vector2(0.00784609, -0.0020981)
+texture = ExtResource("4_d21ai")
+
+[node name="Button" type="Button" parent="Shop/Rotateblock2"]
+offset_left = -46.0
+offset_top = -23.0
+offset_right = 47.0
+offset_bottom = 29.0
+flat = true
+
+[node name="Move2" type="Sprite2D" parent="Shop"]
+position = Vector2(-0.0345228, 0.147706)
+scale = Vector2(0.00784609, -0.0020981)
+texture = ExtResource("1_0hol4")
+
+[node name="button2" type="Button" parent="Shop/Move2"]
+offset_left = -43.0
+offset_top = -23.0
+offset_right = 53.0
+offset_bottom = 30.0
+flat = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = -315.0
+offset_top = -250.0
+offset_right = -240.0
+offset_bottom = -184.0
+scale = Vector2(2.54847, 3.23488)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_q6r6c")
+text = "2x click 
+to spawn
+"
+
+[connection signal="pressed" from="Shop/Rotateblock2/Button" to="Shop" method="_on_button_pressed"]
+[connection signal="pressed" from="Shop/Move2/button2" to="Shop" method="_on_button_2_pressed"]
