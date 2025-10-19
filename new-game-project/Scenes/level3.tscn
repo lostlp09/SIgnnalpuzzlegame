@@ -255,7 +255,7 @@ texture = ExtResource("12_2jf1r")
 texture = ExtResource("13_5qe4c")
 
 [node name="Escape" type="Sprite2D" parent="."]
-position = Vector2(1474, -166)
+position = Vector2(1490, -163)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("14_mf2hp")
 
