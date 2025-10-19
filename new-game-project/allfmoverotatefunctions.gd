@@ -6,11 +6,27 @@ var runningfunc = false
 var timer = 0
 var runningeverything = false
 func  move(a,Character)->void:
-	var anzahl = 96 * a
-	for i in range(0,anzahl):
-		Character.move_local_x(1)
-		await get_tree().create_timer(0.01).timeout
-	Allfmoverotatefunctions.runningfunc = false
+	var anzahl = a * 0.58
+	var isdone = false
+	if Starting == true:
+		character = Character
+		while  isdone == false:
+			if Starting == false:
+				isdone = true
+				timer = 0
+				character =null
+			if anzahl <= timer:
+				for i in Character.get_child(2).get_overlapping_areas():
+					if i.get_parent().name == "Escape":
+						get_tree().change_scene_to_file("res://Scenes/levelmenü.tscn")
+				print("smaller")
+				isdone = true
+				timer = 0
+				character =null
+				Allfmoverotatefunctions.runningfunc = false
+			await  get_tree().create_timer(0.01).timeout	
+	else:
+		timer=0
 func  Rotate(a,Character)->void:
 	if Starting == true:
 		print(Character.rotation)

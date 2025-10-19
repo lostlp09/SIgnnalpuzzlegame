@@ -42,14 +42,6 @@ func start()-> void:
 				await get_tree().create_timer(0.1).timeout
 				if Allfmoverotatefunctions.Starting == false:
 					blockslist = 300000
-				
-	
-	
-		
-		
-		
-
-
 func _on_reset_pressed() -> void:
 	Allfmoverotatefunctions.Starting = false
 	Allfmoverotatefunctions.runningfunc = false

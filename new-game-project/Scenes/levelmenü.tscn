@@ -1,35 +1,51 @@
-[gd_scene load_steps=2 format=3 uid="uid://n7lx3tq38miy"]
+[gd_scene load_steps=3 format=3 uid="uid://n7lx3tq38miy"]
 
 [ext_resource type="FontFile" uid="uid://qm60bnc47k4o" path="res://PixelifySans-VariableFont_wght.ttf" id="1_8xfqt"]
+[ext_resource type="Script" uid="uid://bdstn1bsualvs" path="res://Scenes/levelmenü.gd" id="1_gtpa3"]
 
 [node name="Levelmenü" type="Node2D"]
+script = ExtResource("1_gtpa3")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 131.0
-offset_top = 186.0
-offset_right = 264.0
-offset_bottom = 415.0
-scale = Vector2(1.8, 1)
-theme_override_fonts/font = ExtResource("1_8xfqt")
-theme_override_font_sizes/font_size = 120
-text = "1"
-
-[node name="Button2" type="Button" parent="."]
-offset_left = 766.0
-offset_top = 208.0
-offset_right = 899.0
-offset_bottom = 437.0
+[node name="Level2" type="Button" parent="."]
+offset_left = 819.0
+offset_top = 445.345
+offset_right = 952.0
+offset_bottom = 674.345
 scale = Vector2(1.8, 1)
 theme_override_fonts/font = ExtResource("1_8xfqt")
 theme_override_font_sizes/font_size = 120
 text = "2"
 
-[node name="Button3" type="Button" parent="."]
-offset_left = 1428.0
-offset_top = 223.0
-offset_right = 1561.0
-offset_bottom = 452.0
+[node name="Level1" type="Button" parent="."]
+offset_left = 186.0
+offset_top = 445.345
+offset_right = 319.0
+offset_bottom = 674.345
+scale = Vector2(1.8, 1)
+theme_override_fonts/font = ExtResource("1_8xfqt")
+theme_override_font_sizes/font_size = 120
+text = "1"
+
+[node name="Level3" type="Button" parent="."]
+offset_left = 1466.0
+offset_top = 445.345
+offset_right = 1599.0
+offset_bottom = 674.345
 scale = Vector2(1.8, 1)
 theme_override_fonts/font = ExtResource("1_8xfqt")
 theme_override_font_sizes/font_size = 120
 text = "3"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 503.0
+offset_top = -29.0
+offset_right = 560.0
+offset_bottom = 12.6667
+scale = Vector2(14.9192, 12.7595)
+theme_override_fonts/font = ExtResource("1_8xfqt")
+text = "LEVELS
+"
+
+[connection signal="pressed" from="Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Level3" to="." method="_on_level_3_pressed"]

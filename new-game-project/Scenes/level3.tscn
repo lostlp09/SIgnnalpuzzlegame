@@ -1,24 +1,24 @@
-[gd_scene load_steps=35 format=3 uid="uid://dyqljflr220j3"]
+[gd_scene load_steps=37 format=3 uid="uid://cgi0k1wq5plqq"]
 
-[ext_resource type="Texture2D" uid="uid://ce067qio0jifs" path="res://move.png" id="1_yymuf"]
-[ext_resource type="Script" uid="uid://dv1jyuvf0su4q" path="res://star_tblock.gd" id="2_esggg"]
-[ext_resource type="FontFile" uid="uid://qm60bnc47k4o" path="res://PixelifySans-VariableFont_wght.ttf" id="3_nolpu"]
-[ext_resource type="Texture2D" uid="uid://df6cksblualhb" path="res://STARTblock.png" id="4_mcj63"]
-[ext_resource type="Texture2D" uid="uid://bvy3yswkegu0u" path="res://Rotateblock.png" id="5_af2a1"]
-[ext_resource type="Texture2D" uid="uid://dafdc1wnl5ax8" path="res://images/floor.png" id="6_ocmlb"]
-[ext_resource type="Texture2D" uid="uid://btfl8q12nssx3" path="res://images/robot.png" id="7_tlxhh"]
-[ext_resource type="Texture2D" uid="uid://nojiinrkgovq" path="res://play.png" id="8_esggg"]
-[ext_resource type="Script" uid="uid://cf0tnbl73s830" path="res://sprite_2d_2.gd" id="9_h54da"]
-[ext_resource type="Script" uid="uid://bms5p5hnxv6tj" path="res://testtt.gd" id="10_fg80b"]
-[ext_resource type="Texture2D" uid="uid://gvmc0pt2fsy8" path="res://images/loopblocks/looptop.png" id="11_icduq"]
-[ext_resource type="Texture2D" uid="uid://2ryakjd0emf0" path="res://images/loopblocks/loopstange.png" id="12_pmaet"]
-[ext_resource type="Texture2D" uid="uid://1tgu4dw1135h" path="res://images/loopblocks/loopbottom.png" id="13_x7ktg"]
-[ext_resource type="Texture2D" uid="uid://csg0ppv80hkdf" path="res://images/Escape.png" id="14_164vy"]
-[ext_resource type="Script" uid="uid://cvb8axtexh84r" path="res://shop.gd" id="15_g2s1u"]
-[ext_resource type="Texture2D" uid="uid://dti1e686di8ad" path="res://images/loopblocks/black-screen-background.png" id="16_4otl7"]
-[ext_resource type="Script" uid="uid://57xif0dqeohe" path="res://button.gd" id="17_p68j0"]
-[ext_resource type="Texture2D" uid="uid://brvwe1at8kka1" path="res://ters.png" id="18_nolpu"]
-[ext_resource type="Script" uid="uid://dca60ati17pms" path="res://Scenes/button.gd" id="19_nolpu"]
+[ext_resource type="Texture2D" uid="uid://ce067qio0jifs" path="res://move.png" id="1_tg0qr"]
+[ext_resource type="Script" uid="uid://dv1jyuvf0su4q" path="res://star_tblock.gd" id="2_p2sx0"]
+[ext_resource type="FontFile" uid="uid://qm60bnc47k4o" path="res://PixelifySans-VariableFont_wght.ttf" id="3_tc3ri"]
+[ext_resource type="Texture2D" uid="uid://df6cksblualhb" path="res://STARTblock.png" id="4_3nkac"]
+[ext_resource type="Texture2D" uid="uid://bvy3yswkegu0u" path="res://Rotateblock.png" id="5_eqm1k"]
+[ext_resource type="Texture2D" uid="uid://dafdc1wnl5ax8" path="res://images/floor.png" id="6_d08tm"]
+[ext_resource type="Texture2D" uid="uid://btfl8q12nssx3" path="res://images/robot.png" id="7_jfxh1"]
+[ext_resource type="Texture2D" uid="uid://nojiinrkgovq" path="res://play.png" id="8_455hk"]
+[ext_resource type="Script" uid="uid://cf0tnbl73s830" path="res://sprite_2d_2.gd" id="9_pdvwv"]
+[ext_resource type="Script" uid="uid://bms5p5hnxv6tj" path="res://testtt.gd" id="10_w46me"]
+[ext_resource type="Texture2D" uid="uid://gvmc0pt2fsy8" path="res://images/loopblocks/looptop.png" id="11_7u0fh"]
+[ext_resource type="Texture2D" uid="uid://2ryakjd0emf0" path="res://images/loopblocks/loopstange.png" id="12_2jf1r"]
+[ext_resource type="Texture2D" uid="uid://1tgu4dw1135h" path="res://images/loopblocks/loopbottom.png" id="13_5qe4c"]
+[ext_resource type="Texture2D" uid="uid://csg0ppv80hkdf" path="res://images/Escape.png" id="14_mf2hp"]
+[ext_resource type="Script" uid="uid://cvb8axtexh84r" path="res://shop.gd" id="15_1alju"]
+[ext_resource type="Texture2D" uid="uid://dti1e686di8ad" path="res://images/loopblocks/black-screen-background.png" id="16_5v8i3"]
+[ext_resource type="Script" uid="uid://57xif0dqeohe" path="res://button.gd" id="17_tsss4"]
+[ext_resource type="Texture2D" uid="uid://brvwe1at8kka1" path="res://ters.png" id="18_s5d5r"]
+[ext_resource type="Script" uid="uid://dca60ati17pms" path="res://Scenes/button.gd" id="19_p2sx0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
 size = Vector2(20, 199.163)
@@ -46,11 +46,17 @@ size = Vector2(64, 64)
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_ta5nu"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_af2a1"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p2sx0"]
 size = Vector2(1.07648, 1.00079)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flf07"]
-size = Vector2(1021.05, 1015.67)
+size = Vector2(921.051, 1146.56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tc3ri"]
+size = Vector2(921.051, 1016.03)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3nkac"]
+size = Vector2(921.051, 1013.33)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yymuf"]
 size = Vector2(868.5, 53)
@@ -71,8 +77,8 @@ metadata/_edit_vertical_guides_ = [128.0, -832.0, -389.0]
 z_index = 20
 position = Vector2(-573, -6.99998)
 scale = Vector2(2.305, 2.305)
-texture = ExtResource("1_yymuf")
-script = ExtResource("2_esggg")
+texture = ExtResource("1_tg0qr")
+script = ExtResource("2_p2sx0")
 metadata/oldpos = Vector2(0, 0)
 
 [node name="Button" type="Button" parent="Move"]
@@ -99,7 +105,7 @@ offset_right = 13.9848
 offset_bottom = 14.6985
 theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_nolpu")
+theme_override_fonts/font = ExtResource("3_tc3ri")
 theme_override_font_sizes/font_size = 6
 text = "1"
 alignment = 1
@@ -107,10 +113,10 @@ max_length = 3
 flat = true
 
 [node name="StarTblock" type="Sprite2D" parent="." groups=["Startblock"]]
-position = Vector2(276, -128)
+position = Vector2(271, -149)
 scale = Vector2(2.305, 2.305)
-texture = ExtResource("4_mcj63")
-script = ExtResource("2_esggg")
+texture = ExtResource("4_3nkac")
+script = ExtResource("2_p2sx0")
 metadata/oldpos = Vector2(0, 0)
 
 [node name="Button" type="Button" parent="StarTblock"]
@@ -133,8 +139,8 @@ shape = SubResource("RectangleShape2D_q6r6c")
 [node name="Rotateblock" type="Sprite2D" parent="." groups=["Rotate"]]
 position = Vector2(-547, -211)
 scale = Vector2(2.305, 2.305)
-texture = ExtResource("5_af2a1")
-script = ExtResource("2_esggg")
+texture = ExtResource("5_eqm1k")
+script = ExtResource("2_p2sx0")
 metadata/oldpos = Vector2(0, 0)
 
 [node name="Button" type="Button" parent="Rotateblock"]
@@ -160,7 +166,7 @@ offset_right = 13.9848
 offset_bottom = 14.6985
 theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_nolpu")
+theme_override_fonts/font = ExtResource("3_tc3ri")
 theme_override_font_sizes/font_size = 6
 text = "1"
 alignment = 1
@@ -176,7 +182,7 @@ offset_left = 672.0
 offset_top = -212.0
 offset_right = 1537.0
 offset_bottom = 653.0
-texture = ExtResource("6_ocmlb")
+texture = ExtResource("6_d08tm")
 stretch_mode = 1
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
@@ -185,7 +191,7 @@ position = Vector2(720, 605)
 scale = Vector2(1.475, 1.475)
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture = ExtResource("7_tlxhh")
+texture = ExtResource("7_jfxh1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(0, 6.10352e-05)
@@ -199,8 +205,8 @@ shape = SubResource("RectangleShape2D_rjqkl")
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(622, -148)
 scale = Vector2(1.78, 1.78)
-texture = ExtResource("8_esggg")
-script = ExtResource("9_h54da")
+texture = ExtResource("8_455hk")
+script = ExtResource("9_pdvwv")
 
 [node name="Button" type="Button" parent="Sprite2D2"]
 offset_left = -32.0
@@ -212,7 +218,7 @@ flat = true
 [node name="Loopall" type="Sprite2D" parent="." groups=["loop"]]
 position = Vector2(-615, -862)
 scale = Vector2(2.3, 2.3)
-script = ExtResource("2_esggg")
+script = ExtResource("2_p2sx0")
 metadata/oldpos = Vector2(0, 0)
 
 [node name="Button" type="Button" parent="Loopall"]
@@ -225,7 +231,7 @@ flat = true
 [node name="Area2D" type="Area2D" parent="Loopall" groups=["loop"]]
 position = Vector2(40.4348, -188.696)
 scale = Vector2(0.434783, 0.434783)
-script = ExtResource("10_fg80b")
+script = ExtResource("10_w46me")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Loopall/Area2D"]
 position = Vector2(-86, 487.5)
@@ -240,18 +246,18 @@ position = Vector2(-91.5, 433.75)
 shape = SubResource("RectangleShape2D_ir8iy")
 
 [node name="loopall" type="Sprite2D" parent="Loopall"]
-texture = ExtResource("11_icduq")
+texture = ExtResource("11_7u0fh")
 
 [node name="stange" type="Sprite2D" parent="Loopall/loopall"]
-texture = ExtResource("12_pmaet")
+texture = ExtResource("12_2jf1r")
 
 [node name="bottom" type="Sprite2D" parent="Loopall/loopall"]
-texture = ExtResource("13_x7ktg")
+texture = ExtResource("13_5qe4c")
 
 [node name="Escape" type="Sprite2D" parent="."]
-position = Vector2(1488, -163)
+position = Vector2(1474, -166)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("14_164vy")
+texture = ExtResource("14_mf2hp")
 
 [node name="Area2D" type="Area2D" parent="Escape"]
 
@@ -262,12 +268,12 @@ shape = SubResource("RectangleShape2D_k73cj")
 position = Vector2(-223, 342)
 scale = Vector2(318.63, -1191.56)
 texture = SubResource("CanvasTexture_ta5nu")
-script = ExtResource("15_g2s1u")
+script = ExtResource("15_1alju")
 
 [node name="Rotateblock2" type="Sprite2D" parent="trash"]
 position = Vector2(-0.021969, 0.322268)
 scale = Vector2(0.00784609, -0.0020981)
-texture = ExtResource("5_af2a1")
+texture = ExtResource("5_eqm1k")
 
 [node name="Button" type="Button" parent="trash/Rotateblock2"]
 offset_left = -46.0
@@ -279,7 +285,7 @@ flat = true
 [node name="Move2" type="Sprite2D" parent="trash"]
 position = Vector2(-0.0345228, 0.147706)
 scale = Vector2(0.00784609, -0.0020981)
-texture = ExtResource("1_yymuf")
+texture = ExtResource("1_tg0qr")
 
 [node name="button2" type="Button" parent="trash/Move2"]
 offset_left = -43.0
@@ -293,16 +299,16 @@ flat = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="trash/Area2D"]
 position = Vector2(0.00470757, -0.000629216)
 scale = Vector2(1, 1)
-shape = SubResource("RectangleShape2D_af2a1")
+shape = SubResource("RectangleShape2D_p2sx0")
 
 [node name="Label" type="Label" parent="."]
-offset_left = -283.0
-offset_top = -218.0
-offset_right = -208.0
-offset_bottom = -152.0
+offset_left = -305.0
+offset_top = -222.0
+offset_right = -230.0
+offset_bottom = -156.0
 scale = Vector2(2.54847, 3.23488)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_nolpu")
+theme_override_fonts/font = ExtResource("3_tc3ri")
 text = "click 
 to spawn
 "
@@ -312,30 +318,45 @@ position = Vector2(946, 104)
 scale = Vector2(-0.095, 0.655)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(373.684, 322.5)
+position = Vector2(1376.32, 254.199)
 shape = SubResource("RectangleShape2D_flf07")
 
 [node name="TextureRect" type="TextureRect" parent="StaticBody2D"]
-offset_left = -137.093
-offset_top = -187.852
-offset_right = 886.907
-offset_bottom = 836.148
-texture = ExtResource("16_4otl7")
+offset_left = 852.632
+offset_top = -328.244
+offset_right = 1876.63
+offset_bottom = 842.756
+texture = ExtResource("16_5v8i3")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2(1237, -87)
+position = Vector2(1232, -92)
 scale = Vector2(-0.095, 0.655)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(363.289, 322.5)
-shape = SubResource("RectangleShape2D_flf07")
+position = Vector2(2336.84, 325.573)
+shape = SubResource("RectangleShape2D_tc3ri")
 
 [node name="TextureRect" type="TextureRect" parent="StaticBody2D2"]
-offset_left = -137.093
-offset_top = -187.852
-offset_right = 886.907
-offset_bottom = 836.148
-texture = ExtResource("16_4otl7")
+offset_left = 1863.16
+offset_top = -183.206
+offset_right = 2887.16
+offset_bottom = 840.794
+texture = ExtResource("16_5v8i3")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(1618, 24)
+scale = Vector2(-0.095, 0.75)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(2400, 329.333)
+shape = SubResource("RectangleShape2D_3nkac")
+
+[node name="TextureRect" type="TextureRect" parent="StaticBody2D3"]
+offset_left = 1863.16
+offset_top = -183.206
+offset_right = 2887.16
+offset_bottom = 840.794
+texture = ExtResource("16_5v8i3")
 
 [node name="Reset" type="Button" parent="."]
 offset_left = 441.0
@@ -344,12 +365,12 @@ offset_right = 559.0
 offset_bottom = -80.0
 text = "Reset"
 flat = true
-script = ExtResource("17_p68j0")
+script = ExtResource("17_tsss4")
 
 [node name="Ters" type="Sprite2D" parent="Reset"]
 position = Vector2(59, 65)
 scale = Vector2(1.795, 1.795)
-texture = ExtResource("18_nolpu")
+texture = ExtResource("18_s5d5r")
 
 [node name="rahmen" type="StaticBody2D" parent="."]
 
@@ -374,10 +395,10 @@ offset_left = 1135.0
 offset_top = 692.0
 offset_right = 1532.0
 offset_bottom = 859.0
-theme_override_fonts/font = ExtResource("3_nolpu")
+theme_override_fonts/font = ExtResource("3_tc3ri")
 theme_override_font_sizes/font_size = 101
 text = "LEAVE"
-script = ExtResource("19_nolpu")
+script = ExtResource("19_p2sx0")
 
 [connection signal="pressed" from="trash/Rotateblock2/Button" to="trash" method="_on_button_pressed"]
 [connection signal="pressed" from="trash/Move2/button2" to="trash" method="_on_button_2_pressed"]

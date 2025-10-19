@@ -21,6 +21,7 @@ func unpressed()->void:
 	var looparea= null
 	if area.has_overlapping_areas():
 		for i in area.get_overlapping_areas():
+			print(i.get_parent().name)
 			if i.is_in_group("loop"):
 				var isin = inloop(i)
 				if isin:
@@ -28,6 +29,8 @@ func unpressed()->void:
 					stop  = true	
 				else:
 					stop = false
+			elif i.get_parent().name == "trash":
+				self.queue_free()
 				
 			print(stop)
 
