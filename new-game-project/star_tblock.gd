@@ -1,6 +1,7 @@
 extends Sprite2D
 @onready var parent = $".."
 
+
 @onready var button1 = null
 @onready var area =null
 var mousepressed = false
@@ -127,9 +128,7 @@ func unpressed()->void:
 							i.position = Vector2(startpos.x ,last_object.position.y + 85)
 						else:
 							i.position = Vector2(startpos.x ,last_object.position.y + 78)
-
 					last_object = i
-		
 	self.set_meta("oldpos",self.position)
 	mousepressed = false
 func größerkleiner(a,b)->bool:
